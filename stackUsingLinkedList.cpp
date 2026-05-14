@@ -56,14 +56,22 @@ public:
         else
         {
             Node *current = top;
-
             while (current != NULL)
             {
                 cout << current->data << " " << endl;
                 current = current->next;
             }
-
             cout << endl;
         }
     }
+
     bool isEmpty()
+     {
+        return top == NULL;
+    }
+};
+int main()
+{
+    stack stack;
+
+    int choice = 0;
