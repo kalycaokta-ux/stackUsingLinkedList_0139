@@ -16,3 +16,12 @@ public:
 
 // stack class
 class stack
+{
+private:
+    Node *top;
+
+public:
+    stack()
+    {
+        top = NULL;
+    }
